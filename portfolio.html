@@ -4,129 +4,158 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Портфоліо</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
-        <a href="./index.html" lang="en">Webstudio</a>
-        <ul>
+        <a class="logo link" href="./index.html" lang="en"
+          >Web<span class="logo-black">Studio</span></a
+        >
+        <ul class="site-nav list">
           <li>
-            <a href="./index.html">Студія</a>
+            <a class="link" href="./index.html">Студія</a>
           </li>
           <li>
-            <a href="#">Портфоліо</a>
+            <a class="link current-page" href="./portfolio.html">Портфоліо</a>
           </li>
           <li>
-            <a href="#">Контакти</a>
+            <a class="link" href="#">Контакти</a>
           </li>
         </ul>
       </nav>
-      <ul>
+      <ul class="contacts list">
         <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
         <li>
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
 
     <main>
-      <h1>Портфоліо</h1>
-      <section>
-        <h2>Проекти</h2>
-        <ul>
-          <li><button type="button">Усі</button></li>
-          <li><button type="button">Веб-сайти</button></li>
-          <li><button type="button">Додатки</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+      <section class="portfolio">
+        <h1 class="visually-hidden">Портфоліо</h1>
+        <ul class="filtr list">
+          <li><button class="filtr-item filtr-current" type="button">Усі</button></li>
+          <li><button class="filtr-item" type="button">Веб-сайти</button></li>
+          <li><button class="filtr-item" type="button">Додатки</button></li>
+          <li><button class="filtr-item" type="button">Дизайн</button></li>
+          <li><button class="filtr-item" type="button">Маркетинг</button></li>
         </ul>
-        <ul>
-          <li>
+        <ul class="list">
+          <li class="portfolio-item">
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
             <img
               src="./images/portfolio1.jpg"
               alt="монітор, на якому відкрийи сайт, у верхні частині заголовок, і нижні тир карточки у рядок, ня яких зображенні жінка, чоловік, жінка"
               width="370"
             />
-            <h3>Технокряк</h3>
+            <h2>Технокряк</h2>
             <p>Веб-сайт</p>
+          </a>
           </li>
-          <li>
+          <li class="portfolio-item">
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
             <img
               src="./images/portfolio2.jpg"
               alt="два баскетболіста в білій і синій формі боряться за мя'ч"
               width="370"
             />
-            <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+            <h2>Постер <span lang="en">New Orlean vs Golden Star</span></h2>
             <p>Дизайн</p>
+          </a>
           </li>
-          <li>
+          <li class="portfolio-item">
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
             <img
               src="./images/portfolio3.jpg"
               alt="емблема ресторана, вертикальна риба із загнутим хвостом і отритим ротом, поверх якої написана назва ресторана"
               width="370"
             />
-            <h3>Ресторан <span lang="en">Seafood</span></h3>
+            <h2>Ресторан <span lang="en">Seafood</span></h2>
             <p>Додаток</p>
+          </a>
           </li>
-          <li>
-            <img src="./images/portfolio4.jpg" alt="безпровідні накладні навушники" width="370" />
-            <h3>Проєкт <span lang="en">Prime</span></h3>
-            <p>Маркетинг</p>
+          <li class="portfolio-item">
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+              <img src="./images/portfolio4.jpg" alt="безпровідні накладні навушники" width="370" />
+              <h2>Проєкт <span lang="en">Prime</span></h2>
+              <p>Маркетинг</p>
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/portfolio5.jpg"
-              alt="дві коробки, більша - біла, менша - сіра"
-              width="370"
-            />
-            <h3>Проєкт <span lang="en">Boxes</span></h3>
-            <p>Додаток</p>
+          <li class="portfolio-item">
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                src="./images/portfolio5.jpg"
+                alt="дві коробки, більша - біла, менша - сіра"
+                width="370"
+              />
+              <h2>Проєкт <span lang="en">Boxes</span></h2>
+              <p>Додаток</p>
+            </a>
           </li>
-          <li>
+          <li class="portfolio-item">
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
             <img
               src="./images/portfolio6.jpg"
               alt="монітор з сайтом, на якому структуровані записи і карта материків"
               width="370"
             />
-            <h3 lang="en">Inspiration has no Borders</h3>
+            <h2 lang="en">Inspiration has no Borders</h2>
             <p>Веб-сайт</p>
+          </a>
           </li>
-          <li>
+          <li class="portfolio-item">
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
             <img
               src="./images/portfolio7.jpg"
               alt="відкритий журнал, в якому три киртинки: жінка феном сушить голову, жінка наприсідки тримає сумку, фото зі спини двох жінок які показують мир"
               width="370"
             />
-            <h3>Видання <span lang="en">Limited Edition</span></h3>
+            <h2>Видання <span lang="en">Limited Edition</span></h2>
             <p>Дизайн</p>
+          </a>
           </li>
-          <li>
+          <li class="portfolio-item">
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
             <img
               src="./images/portfolio8.jpg"
               alt="прив'язана до шнурка етикетка, яка містить надпис"
               width="370"
             />
-            <h3>Проєкт <span lang="en">LAB</span></h3>
+            <h2>Проєкт <span lang="en">LAB</span></h2>
             <p>Маркетинг</p>
+          </a>
           </li>
-          <li>
+          <li class="portfolio-item">
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
             <img src="./images/portfolio9.jpg" alt="дві руки на ноутбукові" width="370" />
-            <h3 lang="en">Growing Business</h3>
+            <h2 lang="en">Growing Business</h2>
             <p>Додаток</p>
+          </a>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <a href="./index.html" lang="en">Webstudio</a>
+    <footer class="footer">
+      <a class="logo link" href="./index.html" lang="en"
+        >Web<span class="logo-white">Studio</span></a
+      >
       <address>
-        <ul>
+        <ul class="list">
           <li>
             <a
+              class="link adrress"
               href="https://goo.gl/maps/zViUr5ABomGoPzUZA"
               target="_blank"
               rel="noopener noreferrer"
@@ -135,10 +164,10 @@
             </a>
           </li>
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link contacts" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
