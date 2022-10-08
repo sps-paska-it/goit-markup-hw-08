@@ -57,14 +57,22 @@ body {
 }
 
 /* site navigation, contacts */
-.site-nav,
-.contacts {
+.site-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
+}
+
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--more-text-color);
 }
 
 .site-nav:hover,
@@ -130,14 +138,20 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 }
 
-.features-text,
-.team-text {
+.features-text {
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--more-text-color);
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 
   color: var(--more-text-color);
@@ -160,7 +174,6 @@ letter-spacing: 0.03em;
 
 .footer-contacts {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -182,7 +195,7 @@ letter-spacing: 0.03em;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  
+
   background-color: var(--filtr-team-bg-color);
   color: var(--primary-text-color);
 }
