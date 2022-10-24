@@ -315,6 +315,7 @@ margin-bottom: 30px;
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-top: 16px;
 }
 
 .team-soc-item,
