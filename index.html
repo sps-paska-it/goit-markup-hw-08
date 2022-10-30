@@ -528,17 +528,60 @@
             </li>
           </ul>
         </div>
+
+        <form>
+          <label>
+            Email
+            <input type="email" name="email" />
+          </label>
+
+          <button type="submit">Підписатися</button>
+        </form>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close " type="button" data-modal-close>
+        <button class="modal-close" type="button" data-modal-close>
           <svg width="18px" height="18px">
             <use href="./images/icons.svg#icon-modal-close"></use>
           </svg>
         </button>
-        
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form name="contact-form">
+          <label class="form-label" for="person-name">Ім'я</label>
+          <div class="form-control">
+            <input class="form-input" id="person-name" type="text" name="person-name" />
+            <svg class="form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="person-phone">Телефон</label>
+          <div class="form-control">
+            <input class="form-input" id="person-phone" type="tel" name="person-phone" />
+            <svg class="form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="person-mail">Пошта</label>
+          <div class="form-control">
+            <input class="form-input" id="person-mail" type="email" name="person-mail" />
+            <svg class="form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="person-comment">Коментар</label>
+            <textarea
+              class="form-textarea"
+              id="person-comment"
+              type="email"
+              name="person-comment"
+              placeholder="Введіть текст"
+            >
+            </textarea>
+            <input id="terms-checkbox" type="checkbox">
+            <label for="terms-checkbox">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
