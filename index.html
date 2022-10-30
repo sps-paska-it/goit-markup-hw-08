@@ -529,14 +529,20 @@
           </ul>
         </div>
 
-        <form>
-          <label>
-            Email
-            <input type="email" name="email" />
-          </label>
-
-          <button type="submit">Підписатися</button>
-        </form>
+        <div class="footer-form-container">
+          <h3 class="footer-soc-title">Підпишіться на розсилку</h3>
+          <form class="footer-form">
+            <label>
+              <input class="footer-input" type="email" name="email" placeholder="E-mail" />
+            </label>
+            
+            <button class="footer-form-send" type="submit">Підписатися
+              <svg class="footer-send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -570,7 +576,8 @@
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-          <label class="form-label" for="person-comment">Коментар</label>
+          <div class="form-field">
+            <label class="form-label" for="person-comment">Коментар</label>
             <textarea
               class="form-textarea"
               id="person-comment"
@@ -579,8 +586,14 @@
               placeholder="Введіть текст"
             >
             </textarea>
-            <input id="terms-checkbox" type="checkbox">
-            <label for="terms-checkbox">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+          </div>
+          <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" />
+          <label class="checkbox-label" for="terms-checkbox"
+            >Погоджуюся з розсилкою та приймаю
+            <a class="link-checkbox link" href="#">Умови договору</a></label
+          >
+          <button class="modal-form-send" type="submit">Відправити
+          </button>
         </form>
       </div>
     </div>
