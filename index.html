@@ -587,11 +587,17 @@
             >
             </textarea>
           </div>
-          <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" />
-          <label class="checkbox-label" for="terms-checkbox"
-            >Погоджуюся з розсилкою та приймаю
-            <a class="link-checkbox link" href="#">Умови договору</a></label
-          >
+          <div class="modal-input">
+            <label class="checkbox-text" >
+              <input class="input-checkbox visually-hidden" type="checkbox" name="accept"/>
+              <span class="icon-checkbox">
+                <svg class="span-icon-checkbox" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю <a class="terms" href="#"> <span>Умови договору</span></a>-
+          </label>
+         </div>
           <button class="modal-form-send" type="submit">Відправити
           </button>
         </form>
