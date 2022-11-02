@@ -505,7 +505,11 @@ img {
 .footer .container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+  flex-grow: 1;
 }
 
 .footer-form-container {
@@ -518,14 +522,14 @@ img {
 }
 
 .footer-input {
-box-sizing: border-box;
-padding-left: 15px;
-width: 358px;
-height: 50px;
-border: 1px solid rgba(255, 255, 255, 0.3);
-background-color: var(--bg-color);
-border-radius: 4px;
-outline: none;
+  box-sizing: border-box;
+  padding-left: 15px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--bg-color);
+  border-radius: 4px;
+  outline: none;
 }
 
 .footer-form-send {
@@ -535,21 +539,21 @@ outline: none;
   width: 200px;
   gap: 10px;
 
-cursor: pointer;
-font-family: inherit;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.06em;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 
-background-color: var(--accent-color);
-color: var(--primary-white-color);
-fill: var(--primary-white-color);
-border-radius: 4px;
-outline: none;
-border: none;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  fill: var(--primary-white-color);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-send:hover,
@@ -617,13 +621,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-title {
   margin-bottom: 12px;
-font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-color: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 
 .form-label {
@@ -641,9 +645,8 @@ color: var(--primary-text-color);
   margin-bottom: 10px;
 }
 
-
-
 .form-input {
+  height: 40px;
   width: 100%;
   padding: 11px 12px 11px 42px;
   box-sizing: border-box;
@@ -672,6 +675,7 @@ color: var(--primary-text-color);
 }
 
 .form-textarea {
+  display: block;
   width: 100%;
   height: 138px;
   padding: 12px 16px;
@@ -704,11 +708,12 @@ color: var(--primary-text-color);
 }
 
 .input-checkbox:checked + .icon-checkbox {
-background-color: var(--accent-color);
-border-color: var(--accent-color);
-background-size: contain;
-background-origin: border-box;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-size: contain;
+  background-origin: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .span-icon-checkbox {
@@ -737,23 +742,23 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 25
 .modal-form-send {
   display: block;
   width: 200px;
-height: 50px;
-margin: 30px 164px 0 164px;
+  height: 50px;
+  margin: 30px auto 0;
 
-cursor: pointer;
-font-family: inherit;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.06em;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 
-background-color: var(--accent-color);
-color: var(--primary-white-color);
-border-radius: 4px;
-outline: none;
-border: none;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-send:hover,
@@ -890,4 +895,3 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 63px 24px;
   color: var(--primary-white-color);
 }
-
