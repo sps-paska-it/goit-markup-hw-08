@@ -1,22 +1,10 @@
-:root {
-  --primary-text-color: #212121;
-  --more-text-color: #757575;
-  --accent-color: #2196f3;
-  --hero-btn-hover: #188ce8;
-  --primary-white-color: #ffffff;
-  --secondary-white-color: rgba(255, 255, 255, 0.6);
-  --black-color: #000000;
-  --filter-team-bg-color: #f5f4fa;
-  --bg-color: #2f303a;
-  --header-border: #ececec;
-  --portfolio-item-border: #eeeeee;
-  --soc-icons-color: #afb1b8;
-}
+
 
 body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
-  font-family: 'Roboto', sans-serif;
 }
 
 /* Reset styles */
@@ -44,6 +32,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
 
 .header .container,
 .nav,
@@ -67,12 +61,6 @@ img {
   margin-right: 93px;
 }
 
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-}
 
 /* WebStudio */
 .logo {
@@ -111,22 +99,20 @@ img {
 /* site navigation */
 .navigation-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-reseat) var(--kubik);
 }
 
 .contacts-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: var(--more-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-reseat) var(--kubik);
 
   display: flex;
   align-items: center;
@@ -169,7 +155,7 @@ img {
   padding: 200px 0px;
 
   max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: var(--hero-linear-gradient),
     url(../images/hero-img.jpg);
   background-size: cover;
   background-position: center;
@@ -206,7 +192,7 @@ img {
 
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-reseat) var(--kubik);
 }
 
 .btn:hover,
@@ -268,7 +254,6 @@ img {
   margin-bottom: 10px;
 
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -284,7 +269,6 @@ img {
 }
 
 .features-text {
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -302,7 +286,6 @@ img {
 
 .work-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -380,7 +363,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-reseat) var(--kubik);
 }
 
 .team-soc-link {
@@ -401,7 +384,7 @@ img {
 
 .team-icon {
   fill: var(--soc-icons-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--time-reseat) var(--kubik);
 }
 /*  */
 
@@ -420,7 +403,7 @@ img {
 
 .clients-icon {
   fill: var(--soc-icons-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--time-reseat) var(--kubik);
 }
 
 .clients-link {
@@ -431,7 +414,7 @@ img {
   height: 100%;
   border: 1px solid var(--soc-icons-color);
   border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border var(--time-reseat) var(--kubik);
 }
 
 .clients-link:hover,
@@ -462,7 +445,6 @@ img {
 
 .footer-adrress {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -471,12 +453,11 @@ img {
 
 .footer-contacts {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--secondary-white-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-reseat) var(--kubik);
 }
 
 .footer-contacts:hover,
@@ -486,7 +467,6 @@ img {
 
 .footer-soc-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -499,7 +479,7 @@ img {
 }
 
 .footer-soc-link {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--white-color10);
 }
 
 .footer .container {
@@ -526,7 +506,7 @@ img {
   padding-left: 15px;
   width: 358px;
   height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--white-color30);
   background-color: var(--bg-color);
   border-radius: 4px;
   outline: none;
@@ -553,7 +533,7 @@ img {
   outline: none;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-reseat) var(--kubik);
 }
 
 .footer-form-send:hover,
@@ -571,8 +551,8 @@ img {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--time-reseat) var(--kubik),
+    visibility 25var (--time-reseat) 0ms var(--kubik);
 }
 
 .backdrop.is-hidden {
@@ -596,7 +576,7 @@ img {
   width: 528px;
   border-radius: 4px;
   background-color: var(--primary-white-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--time-reseat) var(--kubik);
 }
 
 .modal-close {
@@ -611,7 +591,7 @@ img {
   background-color: var(--white-color);
   fill: var(--black-color);
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--time-reseat) var(--kubik);
 }
 
 .modal-close:hover,
@@ -654,7 +634,7 @@ img {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--time-reseat) var(--kubik);
 }
 
 .form-icon {
@@ -664,7 +644,7 @@ img {
   transform: translateY(-50%);
   pointer-events: none;
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--time-reseat) var(--kubik);
 }
 
 .form-input:focus,
@@ -685,7 +665,7 @@ img {
   outline: none;
   resize: none;
   cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--time-reseat) var(--kubik);
 }
 
 .form-field {
@@ -712,8 +692,8 @@ img {
   border-color: var(--accent-color);
   background-size: contain;
   background-origin: border-box;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--time-reseat) var(--kubik),
+    border-color var(--time-reseat) var(--kubik);
 }
 
 .span-icon-checkbox {
@@ -727,7 +707,6 @@ img {
   align-items: center;
   justify-content: center;
   text-align: left;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--more-text-color);
@@ -758,7 +737,7 @@ img {
   outline: none;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250var (--time-reseat) ms var(--kubik);
 }
 
 .modal-form-send:hover,
@@ -793,9 +772,8 @@ img {
 
   background-color: var(--filter-team-bg-color);
   color: var(--primary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--time-reseat) var(--kubik),
+    background-color var(--time-reseat) var(--kubik), box-shadow var(--time-reseat) var(--kubik);
 }
 
 .filter-current,
@@ -823,7 +801,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--time-reseat) var(--kubik);
 }
 
 .portfolio-link:hover,
@@ -878,8 +856,8 @@ img {
   width: 100%;
   height: 100%;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform var(--time-reseat) var(--kubik);
+  background-color: var(--overlay-bg-color);
 }
 
 .portfolio-link:hover .description,
