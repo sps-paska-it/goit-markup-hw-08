@@ -1,0 +1,21 @@
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+.adrress__link-map {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.address__link-contacts {
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-white-color);
+    transition: color var(--time-reseat) var(--kubik);
+    &:hover, &:focus {
+  color: var(--accent-color);
+}
+}
