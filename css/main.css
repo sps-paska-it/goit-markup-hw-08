@@ -85,6 +85,12 @@ a {
 .section {
   padding: 94px 0;
 }
+.section--other-background {
+  background-color: var(--filter-team-bg-color);
+}
+.section--no-padding-top {
+  padding-top: 0;
+}
 
 .section__title {
   margin-bottom: 50px;
@@ -93,10 +99,6 @@ a {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.section-works {
-  padding-top: 0;
 }
 
 .container {
@@ -118,7 +120,7 @@ a {
   margin-right: 93px;
 }
 
-.header__logo--black {
+.header__logo-black {
   color: var(--black-color);
 }
 
@@ -314,7 +316,7 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__div {
+.team__tank {
   padding: 30px 0;
 }
 
@@ -358,13 +360,13 @@ a {
 .socials__link:hover, .socials__link:focus {
   background-color: var(--accent-color);
 }
-.socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
-  fill: var(--primary-white-color);
-}
 
 .socials__icon {
   fill: var(--soc-icons-color);
   transition: fill var(--time-reseat) var(--kubik);
+}
+.socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
+  fill: var(--primary-white-color);
 }
 
 .clients {
@@ -392,13 +394,13 @@ a {
 .clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
 }
-.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
-  fill: var(--accent-color);
-}
 
 .clients__icon {
   fill: var(--soc-icons-color);
   transition: fill var(--time-reseat) var(--kubik);
+}
+.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
+  fill: var(--accent-color);
 }
 
 .footer {
@@ -744,9 +746,6 @@ a {
 .card__link:hover, .card__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.card__link:hover .card__description, .card__link:focus .card__description {
-  transform: translateY(-100%);
-}
 
 .card:nth-child(3n) {
   margin-right: 0px;
@@ -791,6 +790,9 @@ a {
   height: 100%;
   transition: transform var(--time-reseat) var(--kubik);
   background-color: var(--overlay-bg-color);
+}
+.card__link:hover .card__description, .card__link:focus .card__description {
+  transform: translateY(-100%);
 }
 
 .card__description-text {

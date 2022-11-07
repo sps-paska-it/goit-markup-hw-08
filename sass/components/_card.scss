@@ -14,10 +14,6 @@
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-    &:hover .card__description,
-    &:focus .card__description {
-      transform: translateY(-100%);
-    }
   }
   
   .card:nth-child(3n) {
@@ -68,6 +64,10 @@
   
     transition: transform var(--time-reseat) var(--kubik);
     background-color: var(--overlay-bg-color);
+    .card__link:hover &,
+    .card__link:focus & {
+      transform: translateY(-100%);
+    }
   }
   
   .card__description-text {

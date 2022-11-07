@@ -23,13 +23,13 @@
   &:focus {
     border: 1px solid var(--accent-color);
   }
-  &:hover .clients__icon,
-  &:focus .clients__icon {
-    fill: var(--accent-color);
-  }
 }
 
 .clients__icon {
   fill: var(--soc-icons-color);
   transition: fill var(--time-reseat) var(--kubik);
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--accent-color);
+  }
 }

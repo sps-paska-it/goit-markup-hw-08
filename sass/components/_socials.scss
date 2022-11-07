@@ -21,13 +21,13 @@
   &:hover, &:focus {
     background-color: var(--accent-color); 
   }
-  &:hover .socials__icon,
-  &:focus .socials__icon {
-    fill: var(--primary-white-color);
-  }
 }
 
 .socials__icon {
   fill: var(--soc-icons-color);
   transition: fill var(--time-reseat) var(--kubik);
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--primary-white-color);
+  }
 }
