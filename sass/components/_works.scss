@@ -1,13 +1,12 @@
 .works {
-    display: inline-flex;
-    gap: 30px;
-  }
+  display: inline-flex;
+  gap: 30px;
 
-  .works__item {
+  &__item {
     position: relative;
   }
 
-  .works__thumb {
+  &__thumb {
     position: absolute;
     display: flex;
     bottom: 0;
@@ -16,15 +15,22 @@
     height: 70px;
     align-items: center;
     justify-content: center;
-  
+
     background-color: rgba(47, 48, 58, 0.8);
   }
 
-  .works__title {
+  &__title {
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-  
+
     color: var(--primary-white-color);
   }
+}
+
+.section.section--no-padding-top {
+@media screen and (max-width: 1199px) {
+    display: none;
+  }
+}

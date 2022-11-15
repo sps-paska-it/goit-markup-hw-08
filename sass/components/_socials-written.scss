@@ -1,0 +1,15 @@
+.socials-written {
+    margin-bottom: 48px;
+    display: flex;
+    gap: 20px;
+    &__item {
+        display: block;
+    }
+    &__link {
+        display: block;
+    }
+    &__text {
+        color: var(--accent-color);
+        @include fontset($fw: 500, $fs: 18px, $lh: 1.22, $ls: 0.02em);
+    }
+}

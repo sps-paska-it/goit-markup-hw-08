@@ -1,35 +1,86 @@
 .form {
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
-    gap: 12px;
+    flex-wrap: wrap;
+    column-gap: 300px;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .form__input {
+
+  &__input {
     box-sizing: border-box;
     padding-left: 15px;
-    width: 358px;
+    width: 100%;
     height: 50px;
+    margin-bottom: 20px;
+    color: var(--secondary-white-color);
     border: 1px solid var(--white-color30);
     background-color: var(--bg-color);
     border-radius: 4px;
     outline: none;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
   }
-  
-  .form__send {
+
+  &__send {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 200px;
     gap: 10px;
-  
+
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+    @include fontset($fw: 700, $fs: 16px, $lh: 1.88, $ls: 0.06em);
     @extend %btn;
     fill: var(--primary-white-color);
     &:hover,
     &:focus {
       background-color: var(--hero-btn-hover);
-    } 
+    }
+  }
 }
+
+// .form {
+//     display: flex;
+//     gap: 12px;
+//   }
+
+//   .form__input {
+//     box-sizing: border-box;
+//     padding-left: 15px;
+//     width: 358px;
+//     height: 50px;
+//     border: 1px solid var(--white-color30);
+//     background-color: var(--bg-color);
+//     border-radius: 4px;
+//     outline: none;
+//   }
+
+//   .form__send {
+//     display: inline-flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 200px;
+//     gap: 10px;
+
+//     font-family: inherit;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     letter-spacing: 0.06em;
+//     @extend %btn;
+//     fill: var(--primary-white-color);
+//     &:hover,
+//     &:focus {
+//       background-color: var(--hero-btn-hover);
+//     }
+// }

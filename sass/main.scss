@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 @import "./utils/placeholders";
+@import "./utils/mixins";
 
 @import "./base/base";
 
@@ -28,3 +29,6 @@
 @import "./components/filters";
 @import "./components/portfolio";
 @import "./components/card";
+@import "./components/menu-button";
+@import "./components/socials-written";
+@import "./components/menu";

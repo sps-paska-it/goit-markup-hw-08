@@ -3,41 +3,74 @@
   padding: 60px 0;
   .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
+    @media screen and (max-width: 767px) {
+      gap: 60px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      row-gap: 60px;
+      column-gap: 165px;
+    }
   }
   .socials__icon {
     fill: var(--primary-white-color);
   }
   .socials__link {
     background-color: var(--white-color10);
-    &:hover, &:focus {
-        background-color: var(--accent-color); 
-      }
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
   }
-}
 
-.footer__web-address {
-  margin-right: 70px;
-  flex-grow: 1;
-}
+  &__web-address {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 61px;
+      flex-grow: 1;
+    }
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
 
-.footer__logo {
-  margin-bottom: 20px;
-}
+  &__logo-white {
+    color: var(--primary-white-color);
+  }
 
-.footer__logo-white {
-  color: var(--primary-white-color);
-}
+  &__socials-container {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 76px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 92px;
+      margin-left: 91px;
+     }
+  }
 
-.footer__title {
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-  margin-bottom: 20px;
-}
+  &__form-container {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-grow: 1;
+    }
+  }
 
-.footer__form-container {
-  margin-left: 93px;
+  &__title {
+    @include fontset($fw: 700, $fs: 14px, $lh: 1.14, $ls: 0.03em);
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
 }

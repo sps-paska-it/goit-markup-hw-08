@@ -3,10 +3,7 @@
     width: 200px;
   
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+    @include fontset($fw: 700, $fs: 16px, $lh: 1.88, $ls: 0.06em);
   
     @extend %btn;
     margin: 30px auto 0;

@@ -1,35 +1,46 @@
 .team {
-  display: inline-flex;
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
-  background-color: var(--filter-team-bg-color);
-}
+  gap: 30px;
 
-.team__item {
-  max-width: 270px;
-  background: var(--primary-white-color);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
+  @media screen and (max-width: 767px) {
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
-.team__tank {
-  padding: 30px 0;
-}
+  &__item {
+    background: var(--primary-white-color);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 
-.team__title {
-  margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+  }
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
+  &__tank {
+    padding: 30px 0 24px;
+    @media screen and (min-width: 1200px) {
+      padding: 30px 0;
+    }
+  }
 
-.team__text {
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--more-text-color);
+  &__title {
+    margin-bottom: 10px;
+    @include fontset($fw: 500, $fs: 16px, $lh: 1.19, $ls: 0.03em);
+    color: var(--primary-text-color);
+  }
+
+  .team__text {
+    margin-bottom: 16px;
+    @include fontset($fw: 400, $fs: 16px, $lh: 1.19, $ls: 0.03em);
+    color: var(--more-text-color);
+  }
 }
