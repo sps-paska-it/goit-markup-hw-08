@@ -5,11 +5,17 @@
     transform: translate(-50%, -50%) scale(1);
   
     padding: 40px;
-    height: 581px;
-    width: 528px;
+    height: 609px;
+    width: 450px;
     border-radius: 4px;
     background-color: var(--primary-white-color);
     transition: transform var(--time-reseat) var(--kubik);
+
+    
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
   }
   
   .modal__close {
@@ -32,10 +38,11 @@
   
   .modal__title {
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.03em;
+    @include fontset($fw: 700, $fs: 20px, $lh: 1.5, $ls: 0.03em);
     color: var(--primary-text-color);
+    
+  @media screen and (min-width: 1200px) {
+    @include fontset($fw: 700, $fs: 20px, $lh: 1.15, $ls: 0.03em);
+  }
   }

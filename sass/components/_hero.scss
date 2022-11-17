@@ -1,41 +1,61 @@
 .hero {
   display: block;
-  max-width: 100%;
-  background: var(--bg-color);
-  padding: 118px 60px 118px 60px;
+  max-width: 1600px;
+  margin:0 auto 30px;
+  padding-top: 118px;
   text-align: center;
-  height: 400px;
-  background-image: var(--hero-linear-gradient), url(../../images/mobile/hero-img-mobile.jpg);
-  // background-image: var(--hero-linear-gradient), url(../../images/hero-img.jpg);
+  background: var(--bg-color);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  // margin-left: auto;
-  // margin-right: auto;
-  @media screen and (min-width: 480px) {
-  }
-
+  height: 400px;
+  background-image: var(--hero-linear-gradient), url(../../images/mobile/hero-img-mobile.jpg);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: var(--hero-linear-gradient), url(../../images/hero-img@2x.jpg);
+    background-image: var(--hero-linear-gradient), url(../../images/mobile/hero-img-mobile@2x.jpg);
   }
-}
 
-.hero__title {
-padding: 0;
-margin: 0;
+  @media screen and (min-width: 768px) {
+    background-image: var(--hero-linear-gradient), url(../../images/tablet/hero-img-tablet.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: var(--hero-linear-gradient), url(../../images/tablet/hero-img-tablet@2x.jpg);
+    }
+  }
 
-@include fontset($fw: 900, $fs: 26px, $lh: 1.62, $ls: 0.06em);
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-}
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    margin-bottom: 47px;
+    height: 600px;
+    background-image: var(--hero-linear-gradient), url(../../images/deskopt/hero-img-desktop.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: var(--hero-linear-gradient),
+        url(../../images/deskopt/hero-img-desktop@2x.jpg);
+    }
+  }
 
-.hero__btn {
-  font-family: inherit;
-  @include fontset($fw: 700, $fs: 16px, $lh: 1.875, $ls: 0.06em);
-  width: 200px;
-  @extend %btn;
-  &:hover,
-  &:focus {
-    background-color: var(--hero-btn-hover);
+  &__title {
+    @include fontset($fw: 900, $fs: 26px, $lh: 1.62, $ls: 0.06em);
+    text-align: center;
+    margin: 0 auto 30px;
+    text-transform: uppercase;
+    width: 360px;
+    color: var(--primary-white-color);
+    @media screen and (min-width: 1200px) {
+      @include fontset($fw: 900, $fs: 44px, $lh: 1.36, $ls: 0.06em);
+      width: 696px;
+    }
+  }
+
+  &__btn {
+    font-family: inherit;
+    @include fontset($fw: 700, $fs: 16px, $lh: 1.875, $ls: 0.06em);
+    width: 200px;
+    @media screen and (min-width: 1200px) {
+      width: 216px;
+    }
+    @extend %btn;
+    &:hover,
+    &:focus {
+      background-color: var(--hero-btn-hover);
+    }
   }
 }

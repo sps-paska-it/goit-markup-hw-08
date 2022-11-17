@@ -1,11 +1,24 @@
 (() => {
-  const menuButton = document.querySelector('.menu__button');
-  const menuList = document.querySelector('.menu__list');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const openMenuBtn = document.querySelector('.header__mobile-menu--open');
+  const closeMenuBtn = document.querySelector('.mobile-menu__close');
 
-  menuButton.addEventListener('click', () => {
-      let expanded = menuButton.getAttribute('aria-expanded') === 'true';
-      menuButton.setAttribute('aria-expanded', !expanded);
-      menuButton.classList.toggle('menu__button--open');
-      menuList.classList.toggle('menu__list--open');
+  const toggleMenu = () => {
+      const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      mobileMenu.classList.toggle('is-open');
+
+      const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
+      bodyScrollLock[scrollLockMethod](document.body);
+  };
+
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
+
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+      if (!e.matches) return;
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+      bodyScrollLock.enableBodyScroll(document.body);
   });
 })();

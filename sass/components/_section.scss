@@ -1,5 +1,9 @@
 .section {
-  // padding: 60px 0;
+  padding: 30px 0;
+  background-color: var(--primary-white-color);
+  @media screen and (min-width: 1200px) {
+    padding: 47px 0;
+  }
   &--other-background {
     background-color: var(--filter-team-bg-color);
   }
@@ -18,11 +22,11 @@
   }
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  margin-bottom: 60px;
-}
+// main {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 60px;
+//   margin-bottom: 60px;
+// }

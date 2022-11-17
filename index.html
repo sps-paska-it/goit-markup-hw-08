@@ -19,115 +19,129 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="logo header__logo" href="./index.html" lang="en"
           >Web<span class="header__logo-black">Studio</span></a
         >
-        <nav class="menu header__menu">
+        <button class="header__mobile-menu header__mobile-menu--open"
+         type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40px" height="40px"          >
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" id="mobile-menu">
           <button
-            class="menu__button"
+            class="mobile-menu__close"
             type="button"
-            aria-expanded="false"
-            aria-controls="menu__list"
           >
-            <svg
-              class="menu__icon"
-              aria-hidden="true"
-              width="40px"
-              height="40px"
-              aria-label="Перемикач мобільного меню"
-            >
-              <use class="menu__icon-menu" href="./images/icons.svg#icon-menu"></use>
-              <use class="menu__icon-cross" href="./images/icons.svg#icon-cross"></use>
+            <svg width="40px" height="40px">
+              <use href="./images/icons.svg#icon-cross"></use>
             </svg>
           </button>
-          <div class="menu__list" id="menu__list">
-            <ul class="navigation menu__navigation">
-              <li class="navigation__item">
-                <a class="navigation__link navigation__link--current-page" href="./index.html"
+          <nav class="mobile-menu__navigation">
+            <ul class="mobile-menu__navigation-list">
+              <li class="mobile-menu__navigation-item">
+                <a class="mobile-menu__navigation-link mobile-menu__navigation-link--current-page" href="./index.html"
                   >Студія</a
                 >
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="./portfolio.html">Портфоліо</a>
+              <li class="mobile-menu__navigation-item">
+                <a class="mobile-menu__navigation-link" href="./portfolio.html">Портфоліо</a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Контакти</a>
-              </li>
-            </ul>
-            <ul class="contacts menu__contacts">
-              <li class="contacts__item">
-                <a class="contacts__link" href="mailto:info@devstudio.com">
-                  <svg class="contacts__icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="contacts__item">
-                <a class="contacts__link" href="tel:+380961111111">
-                  <svg class="contacts__icon" width="10" height="16">
-                    <use href="./images/icons.svg#icon-tell"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
+              <li class="mobile-menu__navigation-item">
+                <a class="mobile-menu__navigation-link" href="#">Контакти</a>
               </li>
             </ul>
-            <ul class="socials-written menu__socials-written">
-              <li class="socials-written__item">
+          </nav>
+                <a class="mobile-menu__tell" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="mobile-menu__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="mobile-menu__socials">
+              <li class="mobile-menu__socials-item">
                 <a
                   href="https://www.instagram.com/"
-                  class="socials-written__link"
+                  class="mobile-menu__socials-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p class="socials-written__text" lang="en">Instagram</p>
+                  <p class="mobile-menu__socials-text" lang="en">Instagram</p>
                 </a>
               </li>
-              <li class="socials-written__item">
+              <li class="mobile-menu__socials-item">
                 <a
                   href="https://www.twitter.com/"
-                  class="socials-written__link"
+                  class="mobile-menu__socials-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p class="socials-written__text" lang="en">Twitter</p>
+                  <p class="mobile-menu__socials-text" lang="en">Twitter</p>
                 </a>
               </li>
-              <li class="socials-written__item">
+              <li class="mobile-menu__socials-item">
                 <a
                   href="https://www.facebook.com/"
-                  class="socials-written__link"
+                  class="mobile-menu__socials-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p class="socials-written__text" lang="en">Facebook</p>
+                  <p class="mobile-menu__socials-text" lang="en">Facebook</p>
                 </a>
               </li>
-              <li class="socials-written__item">
+              <li class="mobile-menu__socials-item">
                 <a
                   href="https://www.linkedin.com/"
-                  class="socials-written__link"
+                  class="mobile-menu__socials-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p class="socials-written__text" lang="en">Linkedin</p>
+                  <p class="mobile-menu__socials-text" lang="en">Linkedin</p>
                 </a>
               </li>
             </ul>
-          </div>
+        </div>
+        <nav>
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--current-page" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакти</a>
+            </li>
+          </ul>
         </nav>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-tell"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
       </div>
-    </header> -->
+    </header>
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
       <section class="section">
         <div class="container">
           <h2 class="section__title visually-hidden">Наші переваги</h2>
@@ -184,7 +198,12 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="works">
             <li class="works__item">
-              <img src="./images/box1.jpg" alt="Програміст пише програмний код" width="370" />
+              <img
+                srcset="./images/box1.jpg 370w, ./images/box1@2x.jpg 740w"
+                src="./images/box1.jpg"
+                alt="Програміст пише програмний код"
+                width="370"
+              />
               <div class="works__thumb">
                 <h3 class="works__title">Десктопні додатки</h3>
               </div>
@@ -214,7 +233,8 @@
           <ul class="team">
             <li class="team__item">
               <img
-                src="./images/foto1.jpg"
+                srcset="./images/team-ihor.jpg 450w, ./images/team-ihor@2x.jpg 900w"
+                src="./images/team-ihor.jpg"
                 alt="Чоловік до 35 років, посміхається, носить очки і бороду"
               />
               <div class="team__tank">
@@ -274,7 +294,8 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/foto2.jpg"
+                srcset="./images/team-olha.jpg 450w, ./images/team-olha@2x.jpg 900w"
+                src="./images/team-olha.jpg"
                 alt="Жінка до 35 років, посміхається, блондинка з довгим волоссям, в очках"
               />
               <div class="team__tank">
@@ -334,7 +355,8 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/foto3.jpg"
+                srcset="./images/team-mykola.jpg 450w, ./images/team-mykola@2x.jpg 900w"
+                src="./images/team-mykola.jpg"
                 alt="Чоловік до 35 років, русявий, посміхається, в білій рубашці"
               />
               <div class="team__tank">
@@ -394,7 +416,8 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/foto4.jpg"
+                srcset="./images/team-myhailo.jpg 450w, ./images/team-myhailo@2x.jpg 900w"
+                src="./images/team-myhailo.jpg"
                 alt="Чоловік до 35 років, посміхається, носить очки і бороду"
               />
               <div class="team__tank">
@@ -595,8 +618,9 @@
             <label>
               <input class="form__input" type="email" name="email" placeholder="E-mail" />
             </label>
-            
-            <button class="form__send" type="submit">Підписатися
+
+            <button class="form__send" type="submit">
+              Підписатися
               <svg width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -647,17 +671,18 @@
             >
             </textarea>
           </div>
-            <label class="checkbox" >
-              <input class="checkbox__input visually-hidden" type="checkbox" name="accept"/>
-              <span class="checkbox__box">
-                <svg class="checkbox__icon" width="16" height="15">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              Погоджуюся з розсилкою та приймаю<a class="checkbox__terms" href="#"><span>Умови договору</span></a>
+          <label class="checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" name="accept" />
+            <span class="checkbox__box">
+              <svg class="checkbox__icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            Погоджуюся з розсилкою та приймаю<a class="checkbox__terms" href="#"
+              ><span>Умови договору</span></a
+            >
           </label>
-          <button class="form-send" type="submit">Відправити
-          </button>
+          <button class="form-send" type="submit">Відправити</button>
         </form>
       </div>
     </div>
