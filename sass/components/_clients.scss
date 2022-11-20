@@ -41,39 +41,3 @@
     }
   }
 }
-
-// .clients {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 30px;
-// }
-
-// .clients__item {
-//   width: calc((100% - 150px) / 6);
-//   height: 92px;
-// }
-
-// .clients__link {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   height: 100%;
-//   border: 1px solid var(--soc-icons-color);
-//   border-radius: 4px;
-//   transition: border var(--time-reseat) var(--kubik);
-//   &:hover,
-//   &:focus {
-//     border: 1px solid var(--accent-color);
-//   }
-// }
-
-// .clients__icon {
-//   fill: var(--soc-icons-color);
-//   transition: fill var(--time-reseat) var(--kubik);
-//   .clients__link:hover &,
-//   .clients__link:focus & {
-//     fill: var(--accent-color);
-//   }
-// }

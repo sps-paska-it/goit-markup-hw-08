@@ -8,13 +8,17 @@
     align-items: center;
     gap: 50px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
   
   &__link {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
   
     @include fontset($fw: 500, $fs: 14px, $lh: 1.14, $ls: 0.02em);
     color: var(--more-text-color);

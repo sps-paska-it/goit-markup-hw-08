@@ -1,34 +1,32 @@
 .hero {
   display: block;
   max-width: 1600px;
-  margin:0 auto 30px;
-  padding-top: 118px;
+  margin: 0 auto 60px;
+  padding: 118px 0;
   text-align: center;
   background: var(--bg-color);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
-  background-image: var(--hero-linear-gradient), url(../../images/mobile/hero-img-mobile.jpg);
+  background-image: var(--hero-linear-gradient), url(../images/mobile/hero-img-mobile.jpg);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: var(--hero-linear-gradient), url(../../images/mobile/hero-img-mobile@2x.jpg);
+    background-image: var(--hero-linear-gradient), url(../images/mobile/hero-img-mobile@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
-    background-image: var(--hero-linear-gradient), url(../../images/tablet/hero-img-tablet.jpg);
+    background-image: var(--hero-linear-gradient), url(../images/tablet/hero-img-tablet.jpg);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: var(--hero-linear-gradient), url(../../images/tablet/hero-img-tablet@2x.jpg);
+      background-image: var(--hero-linear-gradient), url(../images/tablet/hero-img-tablet@2x.jpg);
     }
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 200px;
-    margin-bottom: 47px;
-    height: 600px;
-    background-image: var(--hero-linear-gradient), url(../../images/deskopt/hero-img-desktop.jpg);
+    padding: 200px 0;
+    margin-bottom: 94px;
+    background-image: var(--hero-linear-gradient), url(../images/deskopt/hero-img-desktop.jpg);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: var(--hero-linear-gradient),
-        url(../../images/deskopt/hero-img-desktop@2x.jpg);
+        url(../images/deskopt/hero-img-desktop@2x.jpg);
     }
   }
 
@@ -37,8 +35,10 @@
     text-align: center;
     margin: 0 auto 30px;
     text-transform: uppercase;
-    width: 360px;
     color: var(--primary-white-color);
+    @media screen and (min-width: 768px) {
+      width: 360px;
+    }
     @media screen and (min-width: 1200px) {
       @include fontset($fw: 900, $fs: 44px, $lh: 1.36, $ls: 0.06em);
       width: 696px;

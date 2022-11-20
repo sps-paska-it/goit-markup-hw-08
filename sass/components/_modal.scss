@@ -3,18 +3,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-  
+  margin: 0 auto;
     padding: 40px;
-    height: 609px;
-    width: 450px;
+    width: calc(100% - 30px);
+    max-width: 450px;
     border-radius: 4px;
     background-color: var(--primary-white-color);
     transition: transform var(--time-reseat) var(--kubik);
 
     
   @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
   }
   }
   
