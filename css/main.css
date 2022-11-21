@@ -1084,15 +1084,17 @@ a {
 }
 @media screen and (max-width: 767px) {
   .mobile-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     padding: 48px 0 48px 25px;
     top: 0;
     left: 0;
+    height: 100%;
     width: 100%;
     z-index: 999;
     background-color: var(--primary-white-color);
-    overflow-y: scroll;
     transform: translateX(100%);
     transition: transform var(--time-reseat) var(--kubik), opacity var(--time-reseat) var(--kubik), visibility var(--time-reseat) var(--kubik);
   }
@@ -1116,9 +1118,6 @@ a {
   }
   .mobile-menu__close:hover {
     fill: var(--accent-color);
-  }
-  .mobile-menu__navigation-list {
-    margin-bottom: 306px;
   }
   .mobile-menu__navigation-link {
     font-weight: 500;

@@ -2,15 +2,17 @@
   display: none;
 
   @media screen and (max-width: 767px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     padding: 48px 0 48px 25px;
     top: 0;
     left: 0;
+    height: 100%;
     width: 100%;
     z-index: 999;
     background-color: var(--primary-white-color);
-    overflow-y: scroll;
     transform: translateX(100%);
     transition: transform var(--time-reseat) var(--kubik), opacity var(--time-reseat) var(--kubik),
       visibility var(--time-reseat) var(--kubik);
@@ -38,10 +40,6 @@
       }
     }
 
-    &__navigation-list {
-      margin-bottom: 306px;
-    }
-
     &__navigation-link {
       @include fontset($fw: 500, $fs: 40px, $lh: 1.175, $ls: 0.02em);
       color: var(--primary-text-color);
@@ -53,10 +51,8 @@
       }
     }
 
-    &__navigation-item {
-      &:not(:last-child) {
+    &__navigation-item:not(:last-child) {
         margin-bottom: 32px;
-      }
     }
 
     &__navigation-link--current-page {
