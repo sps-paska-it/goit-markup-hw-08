@@ -1,18 +1,26 @@
 .mobile-menu {
   display: none;
-  &.is-open {  
-    display: block;
-  }
+
   @media screen and (max-width: 767px) {
+    display: block;
     position: fixed;
     padding: 48px 0 48px 25px;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     z-index: 999;
-    background: var(--primary-white-color);
+    background-color: var(--primary-white-color);
     overflow-y: scroll;
+    transform: translateX(100%);
+    transition: transform var(--time-reseat) var(--kubik), opacity var(--time-reseat) var(--kubik),
+      visibility var(--time-reseat) var(--kubik);
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: initial;
+      transform: translateX(0);
+    }
 
     &__close {
       position: absolute;
@@ -26,7 +34,7 @@
       cursor: pointer;
       transition: fill var(--time-reseat) var(--kubik);
       &:hover {
-          fill: var(--accent-color);
+        fill: var(--accent-color);
       }
     }
 
@@ -69,7 +77,19 @@
 
     &__socials {
       display: flex;
-      gap: 20px;
+    }
+
+    &__socials-item {
+      padding: 0 10px;
+      &:first-child {
+          padding-left: 0;
+      }
+      &:last-child {
+          padding-right: 0;
+      }
+      &:not(:last-child) {
+          border-right: 1px solid rgba(33, 33, 33, 0.2);
+      }
     }
 
     &__socials-text {
@@ -78,4 +98,3 @@
     }
   }
 }
-
