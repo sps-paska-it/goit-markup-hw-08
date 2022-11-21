@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <title>Студія</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body>
     <header class="header">
@@ -199,28 +197,31 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="works">
             <li class="works__item">
-              <img
-                srcset="./images/box1.jpg 370w, ./images/box1@2x.jpg 740w"
-                src="./images/box1.jpg"
-                alt="Програміст пише програмний код"
-                width="370"
-              />
+              <picture>
+                <source srcset="./images/box1.jpg 1x,
+                 ./images/box1@2x.jpg 2x" media="(min-width: 1200px)"/>
+                <img src="./images/box1.jpg" alt="Програміст пише код"/>
+            </picture>
               <div class="works__thumb">
                 <h3 class="works__title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="works__item">
-              <img src="./images/box2.jpg" alt="Лодина трима телефон перед ноутбуком" width="370" />
+              <picture>
+                <source srcset="./images/box2.jpg 1x,
+                 ./images/box2@2x.jpg 2x" media="(min-width: 1200px)"/>
+                <img src="./images/box2.jpg" alt="Програміст пише код"/>
+            </picture>
               <div class="works__thumb">
                 <h3 class="works__title">Мобільні додатки</h3>
               </div>
             </li>
             <li class="works__item">
-              <img
-                src="./images/box3.jpg"
-                alt="Людина тримає планшеті на якому зображенна палітра кольорів"
-                width="370"
-              />
+              <picture>
+                <source srcset="./images/box3.jpg 1x,
+                 ./images/box3@2x.jpg 2x" media="(min-width: 1200px)"/>
+                <img src="./images/box3.jpg" alt="Програміст пише код"/>
+            </picture>
               <div class="works__thumb">
                 <h3 class="works__title">Дизайнерські рішення</h3>
               </div>
@@ -235,13 +236,13 @@
             <li class="team__item">
               <picture>
                 <source srcset="./images/mobile/team-ihor.jpg 1x,
-                    ./images/mobile/team-ihor@2x.jpg 2x" media="(max-width: 767px)" />
+                    ./images/mobile/team-ihor@2x.jpg 2x" media="(max-width: 767px)"/>
                 <source srcset="./images/tablet/team-ihor-tablet.jpg 1x,
-                    ./images/tablet/team-ihor-tablet@2x.jpg 2x" media="(max-width: 1199px)" />
+                    ./images/tablet/team-ihor-tablet@2x.jpg 2x" media="(max-width: 1199px)"/>
                 <source srcset="./images/deskopt/team-ihor-desktop.jpg 1x,
-                ./images/deskopt/team-ihor-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                ./images/deskopt/team-ihor-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
                 <img src="./images/mobile/team-ihor.jpg"
-                      alt="Чоловік до 35 років, посміхається, носить очки і бороду" />
+                      alt="Чоловік до 35 років, посміхається, носить очки і бороду"/>
             </picture>
               <div class="team__tank">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
@@ -301,13 +302,13 @@
             <li class="team__item">
               <picture>
                 <source srcset="./images/mobile/team-olha.jpg 1x,
-                    ./images/mobile/team-olha@2x.jpg 2x" media="(max-width: 767px)" />
+                    ./images/mobile/team-olha@2x.jpg 2x" media="(max-width: 767px)"/>
                 <source srcset="./images/tablet/team-olha-tablet.jpg 1x,
-                    ./images/tablet/team-olha-tablet@2x.jpg 2x" media="(max-width: 1199px)" />
+                    ./images/tablet/team-olha-tablet@2x.jpg 2x" media="(max-width: 1199px)"/>
                 <source srcset="./images/deskopt/team-olha-desktop.jpg 1x,
-                ./images/deskopt/team-olha-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                ./images/deskopt/team-olha-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
                 <img src="./images/mobile/team-olha.jpg"
-                alt="Жінка до 35 років, посміхається, блондинка з довгим волоссям, в очках" />
+                alt="Жінка до 35 років, посміхається, блондинка з довгим волоссям, в очках"/>
             </picture>
               <div class="team__tank">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -367,13 +368,13 @@
             <li class="team__item">
               <picture>
                 <source srcset="./images/mobile/team-mykola.jpg 1x,
-                    ./images/mobile/team-mykola@2x.jpg 2x" media="(max-width: 767px)" />
+                    ./images/mobile/team-mykola@2x.jpg 2x" media="(max-width: 767px)"/>
                 <source srcset="./images/tablet/team-mykola-tablet.jpg 1x,
-                    ./images/tablet/team-mykola-tablet@2x.jpg 2x" media="(max-width: 1199px)" />
+                    ./images/tablet/team-mykola-tablet@2x.jpg 2x" media="(max-width: 1199px)"/>
                 <source srcset="./images/deskopt/team-mykola-desktop.jpg 1x,
-                ./images/deskopt/team-mykola-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                ./images/deskopt/team-mykola-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
                 <img src="./images/mobile/team-mykola.jpg"
-                alt="Чоловік до 35 років, русявий, посміхається, в білій рубашці" />
+                alt="Чоловік до 35 років, русявий, посміхається, в білій рубашці"/>
             </picture>
               <div class="team__tank">
                 <h3 class="team__title">Микола Тарасов</h3>
@@ -433,13 +434,13 @@
             <li class="team__item">
               <picture>
                 <source srcset="./images/mobile/team-myhailo.jpg 1x,
-                    ./images/mobile/team-myhailo@2x.jpg 2x" media="(max-width: 767px)" />
+                    ./images/mobile/team-myhailo@2x.jpg 2x" media="(max-width: 767px)"/>
                 <source srcset="./images/tablet/team-myhailo-tablet.jpg 1x,
-                    ./images/tablet/team-myhailo-tablet@2x.jpg 2x" media="(max-width: 1199px)" />
+                    ./images/tablet/team-myhailo-tablet@2x.jpg 2x" media="(max-width: 1199px)"/>
                 <source srcset="./images/deskopt/team-myhailo-desktop.jpg 1x,
-                ./images/deskopt/team-myhailo-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                ./images/deskopt/team-myhailo-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
                 <img src="./images/mobile/team-myhailo.jpg"
-                alt="Чоловік до 35 років, посміхається, носить очки і бороду" />
+                alt="Чоловік до 35 років, посміхається, носить очки і бороду"/>
             </picture>
               <div class="team__tank">
                 <h3 class="team__title">Михайло Єрмаков</h3>
@@ -637,7 +638,7 @@
           <p class="footer__title">Підпишіться на розсилку</p>
           <form class="form">
             <label>
-              <input class="form__input" type="email" name="email" placeholder="E-mail" />
+              <input class="form__input" type="email" name="email" placeholder="E-mail"/>
             </label>
 
             <button class="form__send" type="submit">
@@ -662,21 +663,21 @@
         <form name="contact-form">
           <label class="contact-form__label" for="person-name">Ім'я</label>
           <div class="contact-form__control">
-            <input class="contact-form__input" id="person-name" type="text" name="person-name" />
+            <input class="contact-form__input" id="person-name" type="text" name="person-name"/>
             <svg class="contact-form__icon" width="18px" height="18px">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
           <label class="contact-form__label" for="person-phone">Телефон</label>
           <div class="contact-form__control">
-            <input class="contact-form__input" id="person-phone" type="tel" name="person-phone" />
+            <input class="contact-form__input" id="person-phone" type="tel" name="person-phone"/>
             <svg class="contact-form__icon" width="18px" height="18px">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
           <label class="contact-form__label" for="person-mail">Пошта</label>
           <div class="contact-form__control">
-            <input class="contact-form__input" id="person-mail" type="email" name="person-mail" />
+            <input class="contact-form__input" id="person-mail" type="email" name="person-mail"/>
             <svg class="contact-form__icon" width="18px" height="18px">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
@@ -686,14 +687,12 @@
             <textarea
               class="contact-form__textarea"
               id="person-comment"
-              type="email"
               name="person-comment"
-              placeholder="Введіть текст"
-            >
+              placeholder="Введіть текст">
             </textarea>
           </div>
           <label class="checkbox">
-            <input class="checkbox__input visually-hidden" type="checkbox" name="accept" />
+            <input class="checkbox__input visually-hidden" type="checkbox" name="accept"/>
             <span class="checkbox__box">
               <svg class="checkbox__icon" width="16" height="15">
                 <use href="./images/icons.svg#icon-check"></use>
@@ -701,8 +700,8 @@
             </span>
             <span class="checkbox__text">
             Погоджуюся з розсилкою та приймаю<a class="checkbox__terms" href="#">
-                Умови договору</span></a
-            >
+                Умови договору</a>
+              </span>
           </label>
           <button class="form-send" type="submit">Відправити</button>
         </form>
